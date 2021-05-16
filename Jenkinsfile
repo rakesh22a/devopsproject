@@ -55,6 +55,7 @@ pipeline{
               echo "GroupId is '${GroupId}'"
               echo "Name is '${Name}'"
             }
+        }
 
         // Stage4 : Deploying
         stage ('Deploy'){
