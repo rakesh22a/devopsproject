@@ -39,7 +39,7 @@ pipeline{
               nexusArtifactUploader artifacts:
               [[artifactId: "${ArtifactId}",
               classifier: '',
-              file: 'target/RakeshDemo-0.0.4-SNAPSHOT.war',
+              file: "target/${ArtifactId}-${Version}.war",
               type: 'war']],
               credentialsId: '01204525-6731-4ff0-8086-b79ec90275e9',
               groupId: "${GroupId}",
